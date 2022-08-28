@@ -4,16 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/footer.js" defer></script>
+    <title>products</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <script src="js/header.js" defer></script>
-   <link rel="stylesheet" href="css/footer.css">
-   <link rel="stylesheet" href="css/header.css">
+    <script src="js/footer.js" defer></script>
+    <link rel="stylesheet" href="css/header.css" />
+
+    <script src="js/book.js" defer></script>
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <script src="js/swiper-bundle.min.js" defer></script>
+    <link rel="stylesheet" href="css/book.css" />
+    <script src="js/app.js" defer></script>
+    <script src="js/productSwiper.js" defer></script>
   </head>
   <body>
     <div class="main header"></div>
-    
+    <div class="line"></div>
+    <section class="book_desc">
+      <div class="product_main">
+        <div class="product_main_image">
+          <img src="images/images.jpeg" alt="" />
+        </div>
+        <div class="product_main_interface">
+          <h1>Lorem ipsum</h1>
+
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+          <p id="price">$100</p>
+          <div class="product_buttons">
+            <button>ADD TO CART</button>
+            <button>ADD TO WISHLIST</button>
+          </div>
+        </div>
+      </div>
+      <div class="product_description">
+        <h1>DESCRIPTION</h1>
+        <p>
+          <span
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            laboriosam quia, sequi cumque eveniet ex? Fugiat labore nam iusto,
+            facilis earum possimus consequuntur consectetur quasi, rem nostrum
+            beatae ducimus tenetur?</span
+          ><span
+            >Officiis, quae perferendis beatae dolor quos recusandae corrupti,
+            tempora impedit magnam possimus repudiandae ab molestias consequatur
+            veritatis, aut fuga nostrum vitae optio nam. Accusantium, magnam
+            delectus. Maxime a vitae quam.</span
+          ><span
+            >Maxime nihil ipsum asperiores molestias consectetur quis architecto
+            rerum dolorem vel at fugiat iusto illum qui, facilis veniam eius
+            itaque suscipit culpa nesciunt quaerat quam tenetur eveniet? Animi,
+            alias esse!</span
+          ><span
+            >Dolorem iusto, aliquid, nam reiciendis praesentium a enim minus
+            sapiente minima commodi sunt perferendis libero esse? Repellat hic
+            quae ipsa consectetur minima, atque cumque possimus illum porro quo
+            accusantium cum.</span
+          ><span
+            >Perferendis necessitatibus, animi adipisci quisquam, molestias quam
+            laborum ut amet reiciendis nesciunt quo vero quasi cumque ipsam
+            exercitationem magni culpa odio atque hic tempore? Quibusdam
+            sapiente aspernatur officia quidem cumque.</span
+          >
+        </p>
+      </div>
+    </section>
+
+    <section class="slide_section">
+      <h1 id="similar_books_h1">similar books</h1>
+      <p id="similar_books_p">x</p>
+
+      <div class="slide_section_main">
+        <div class="slide_section2 mySwiper2">
+          <div class="slide_content swiper-wrapper">
+            <div class="slider swiper-slide">
+              <div class="bookie"></div>
+              <div class="bookie"></div>
+              <div class="bookie"></div>
+              <div class="bookie"></div>
+            </div>
+            <div class="slider swiper-slide">
+              <div class="bookie"></div>
+              <div class="bookie"></div>
+              <div class="bookie"></div>
+              <div class="bookie"></div>
+            </div>
+            
+          </div>
+
+          <div class="swiper-button-next" id="swiper-button-next2"></div>
+          <div class="swiper-button-prev" id="swiper-button-prev2"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="line"></div>
     <div class="footer"></div>
   </body>
 </html>

@@ -12,7 +12,7 @@ const createHeader = () => {
     </h1>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><i class="fa-solid fa-x"></i></li>
         <li><a href="#">Categories</a></li>
         <li><i class="fa-solid fa-x"></i></li>
@@ -25,6 +25,7 @@ const createHeader = () => {
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
     </nav>
-  </header>`;
+  </header>
+  `;
 }
 createHeader();
