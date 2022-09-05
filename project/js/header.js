@@ -18,6 +18,8 @@ const createHeader = () => {
         <li><i class="fa-solid fa-x"></i></li>
         <li><a href="#">Author</a></li>
         <li><i class="fa-solid fa-x"></i></li>
+        <li><a href="#">Library</a></li>
+        <li><i class="fa-solid fa-x"></i></li>
         <li><a href="#">Promotions & Rewards</a></li>
       </ul>
       <div class="search_bar">
