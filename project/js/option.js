@@ -1,5 +1,3 @@
-
-
 const selected = document.querySelector(".selected");
 const optionsContainer = document.querySelector(".options-container");
 

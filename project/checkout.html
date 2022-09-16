@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+
+    <script src="https://use.fontawesome.com/2b2beac5b4.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <script src="js/swiper-bundle.min.js" defer></script>
+    <script src="js/homeSwiper.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/footer.js" defer></script>
+    <script src="js/slide.js" defer></script>
+    <script src="js/checkout.js" defer></script>
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+</head>
+
+<body>
+    <div class="main header"></div>
+    <div class="line"></div>
+
+    <div class="checkout">
+        <div class="card_details">
+            <div class="details">
+                <h1>Enter Card Details</h1>
+            </div>
+            <div class="card_container">
+                <img src="images/CreditCard.png" alt="">
+                <div class="card_num">
+                    <input class="required" id="field" type="number" maxlength="4"  max="9999" min="0000" placeholder="****" oninput="checkNumberFieldLength(this);">
+                    <input class="required" id="field" type="number" minlength="4" maxlength="4" max="9999" min="0000" placeholder="****" oninput="checkNumberFieldLength(this);">
+                    <input class="required" id="field" type="number" minlength="4" maxlength="4" max="9999" min="0000" placeholder="****" oninput="checkNumberFieldLength(this);">
+                    <input class="required" id="field" type="number" minlength="4" maxlength="4" max="9999" min="0000" placeholder="****" oninput="checkNumberFieldLength(this);">
+                </div>
+                <div class="name">
+                    <label for="holder">Card Holder</label><br>
+                    <input class="required" id="field" type="text" placeholder="Enter Name">
+                </div>
+                <div class="exp">
+                    <label for="valid">Valid Thru</label>
+                    <input class="required" id="field" type="month" >
+                </div>
+                <div class="cvc">
+                    <label for="pass">CVV</label><br>
+                    <input class="required" id="field" type="number" max="999" min="000" name="cvv" placeholder="***">
+                </div>
+            </div>
+        </div>
+        <div class="Order">
+            <div class="order_sum">
+                <div class="summ">
+                    <h1>Order Summary</h1>
+                </div>
+                <div class="summ_container">
+                    <div class="items">
+                        <h1>Items</h1>
+                        <p>999 Books</p>
+                    </div>
+                    <div class="promo">
+                        <h1>Promo Code</h1>
+                        <div class="promo-bar">
+                            <input type="text" placeholder="Enter Code...">
+                            <button>APPLY</button>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <h1>Card Type</h1>
+                        <div class="custom_select">
+                            <select name="selection">
+                                <option value="-">-</option>
+                                <option value="1900">Visa</option>
+                                <option value="1910">MasterCard</option>
+                                <option value="1920">AMEX</option>
+                                <option value="1920">PayPal</option>
+                                <option value="1920">Apple Pay</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div class="total_info">
+                            <h1>Total Cost</h1>
+                            <p>$999</p>
+                        </div>
+                        <div class="checkout">
+                            <button onclick=" location.href='#' " type="button" class="checkout_btn">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="line"></div>
+    <div class="footer"></div>
+</body>
+
+</html>

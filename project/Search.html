@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,87 +9,252 @@
     <script src="js/footer.js" defer></script>
     <script src="js/header.js" defer></script>
     <script src="js/book.js" defer></script>
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <script src="https://use.fontawesome.com/2b2beac5b4.js" defer></script>
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="css/selectbox.css" />
     <script src="js/option.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-</head>
+    <script src="js/jquery-3.6.1.min.js"></script>
+  </head>
 
-<body>
+  <body>
     <div class="main header"></div>
     <div class="line"></div>
     <div class="search_container">
-        <div class="search_filters">
-            <button>filters</button>
-             <div class="select-box">
-        <div class="options-container">
-          <div class="option">
-            <input
-              type="radio"
-              class="radio"
-              id="automobiles"
-              name="category"
-            />
-            <label for="automobiles">Automobiles</label>
-          </div>
+      <div class="search_filters">
+        <div class="filter-button">Filters</div>
+        <div class="select-box">
+          
+          <div class="options-container ">
+            <div class="option">
+              <input type="radio" class="radio" id="2022" name="category" />
+              <label for="2022">2022</label>
+            </div>
 
-          <div class="option">
-            <input type="radio" class="radio" id="film" name="category" />
-            <label for="film">Film & Animation</label>
-          </div>
+            <div class="option">
+              <input type="radio" class="radio" id="2021" name="category" />
+              <label for="2021">2021</label>
+            </div>
 
-          <div class="option">
-            <input type="radio" class="radio" id="science" name="category" />
-            <label for="science">Science & Technology</label>
-          </div>
+            <div class="option">
+              <input type="radio" class="radio" id="2020" name="category" />
+              <label for="2020">2020</label>
+            </div>
 
-          <div class="option">
-            <input type="radio" class="radio" id="art" name="category" />
-            <label for="art">Art</label>
-          </div>
+            <div class="option">
+              <input type="radio" class="radio" id="2019" name="category" />
+              <label for="2019">2019</label>
+            </div>
 
-          <div class="option">
-            <input type="radio" class="radio" id="music" name="category" />
-            <label for="music">Music</label>
-          </div>
+            <div class="option">
+              <input type="radio" class="radio" id="2018" name="category" />
+              <label for="2018">2018</label>
+            </div>
 
-          <div class="option">
-            <input type="radio" class="radio" id="travel" name="category" />
-            <label for="travel">Travel & Events</label>
-          </div>
+            <div class="option">
+              <input type="radio" class="radio" id="2017" name="category" />
+              <label for="2017">2017</label>
+            </div>
 
-          <div class="option">
-            <input type="radio" class="radio" id="sports" name="category" />
-            <label for="sports">Sports</label>
-          </div>
+            <div class="option">
+              <input type="radio" class="radio" id="2016" name="category" />
+              <label for="2016">2016</label>
+            </div>
 
-          <div class="option">
-            <input type="radio" class="radio" id="news" name="category" />
-            <label for="news">News & Politics</label>
-          </div>
+            <div class="option">
+              <input type="radio" class="radio" id="2015" name="category" />
+              <label for="2015">2015</label>
+            </div>
 
-          <div class="option">
-            <input type="radio" class="radio" id="tutorials" name="category" />
-            <label for="tutorials">Tutorials</label>
+            <div class="option">
+              <input type="radio" class="radio" id="2014" name="category"/>
+              <label for="2014">2014</label>
+
+            </div>
+            <div class="option">
+              <input type="radio" class="radio" id="2013" name="category"/>
+              <label for="2013">2013</label>
+
+            </div>
+            <div class="option">
+              <input type="radio" class="radio" id="2012" name="category"/>
+              <label for="2012">2012</label>
+
+            </div>
+            <div class="option">
+              <input type="radio" class="radio" id="2011" name="category"/>
+              <label for="2011">2011</label>
+
+            </div>
+            <div class="option">
+              <input type="radio" class="radio" id="2010" name="category"/>
+              <label for="2010">2010</label>
+
+            </div>
+            <div class="option">
+              <input type="radio" class="radio" id="2009" name="category"/>
+              <label for="2009">2009</label>
+
+            </div>
+            <div class="option">
+              <input type="radio" class="radio" id="2008" name="category"/>
+              <label for="2008">2008</label>
+
+            </div>
+            <div class="option">
+              <input type="radio" class="radio" id="2007" name="category"/>
+              <label for="2007">2007</label>
+
+            </div>
+            <div class="option">
+              <input type="radio" class="radio" id="2006" name="category"/>
+              <label for="2006">2006</label>
+
+            </div>
+            <div class="option">
+              <input type="radio" class="radio" id="2005" name="category"/>
+              <label for="2005">2005</label>
+
+            </div>
+            
           </div>
+          <div class="selected">Publish year</div>
+          
         </div>
+        <div class="select-box">
+          
+          <div class="options-container ">
+            <div class="option">
+              <input
+                type="radio"
+                class="radio"
+                id="automobiles"
+                name="category"
+              />
+              <label for="automobiles">Automobiles</label>
+            </div>
 
-        <div class="selected">
-          Publish year
+            <div class="option">
+              <input type="radio" class="radio" id="film" name="category" />
+              <label for="film">Film & Animation</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="science" name="category" />
+              <label for="science">Science & Technology</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="art" name="category" />
+              <label for="art">Art</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="music" name="category" />
+              <label for="music">Music</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="travel" name="category" />
+              <label for="travel">Travel & Events</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="sports" name="category" />
+              <label for="sports">Sports</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="news" name="category" />
+              <label for="news">News & Politics</label>
+            </div>
+
+            <div class="option">
+              <input
+                type="radio"
+                class="radio"
+                id="tutorials"
+                name="category"
+              />
+              <label for="tutorials">Tutorials</label>
+            </div>
+            
+          </div>
+          <div class="selected">Special Offer</div>
+          
+        </div>
+        <div class="select-box">
+          
+          <div class="options-container ">
+            <div class="option">
+              <input
+                type="radio"
+                class="radio"
+                id="automobiles"
+                name="category"
+              />
+              <label for="automobiles">Automobiles</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="film" name="category" />
+              <label for="film">Film & Animation</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="science" name="category" />
+              <label for="science">Science & Technology</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="art" name="category" />
+              <label for="art">Art</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="music" name="category" />
+              <label for="music">Music</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="travel" name="category" />
+              <label for="travel">Travel & Events</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="sports" name="category" />
+              <label for="sports">Sports</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="news" name="category" />
+              <label for="news">News & Politics</label>
+            </div>
+
+            <div class="option">
+              <input
+                type="radio"
+                class="radio"
+                id="tutorials"
+                name="category"
+              />
+              <label for="tutorials">Tutorials</label>
+            </div>
+          </div>
+          <div class="selected">Category</div>
+
+          
         </div>
       </div>
-        </div>
     </div>
     <div class="line"></div>
 
-
     <div class="footer"></div>
-</body>
-
+  </body>
 </html>

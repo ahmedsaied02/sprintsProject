@@ -1,0 +1,88 @@
+
+  
+  .select-box {
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+  }
+  
+  .select-box .options-container {
+    background: linear-gradient(to right,#1F5F8B,#1891AC);
+    color: #d2ecf9;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 15px 8px 8px 15px;
+    overflow: hidden;
+  
+    order: 1;
+  }
+  
+  .selected {
+    background: linear-gradient(90deg,#1F5F8B,#1891AC);
+    border-radius: 15px;
+    margin-bottom: 8px;
+    color: #d2ecf9;
+    position: relative;
+  
+    order: 0;
+  }
+  
+  .selected::after {
+    content: "";
+    background: url("../images/arrow-down.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+    position: absolute;
+    height: 100%;
+    width: 32px;
+    right: 10px;
+    top: 10px;
+  
+    transition: all 0.4s;
+  }
+    
+ 
+  .select-box .options-container.active {
+   
+    max-height: 180px;
+    opacity: 1;
+    overflow-y: scroll;
+    
+  }
+  
+  .select-box .options-container.active + .selected::after {
+    transform: rotateX(180deg);
+    top: -10px;
+  }
+  
+  .select-box .options-container::-webkit-scrollbar {
+    width: 8px;
+    background: #0d141f;
+    border-radius: 0 15px 15px 0;
+  }
+  
+  .select-box .options-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg,#1F5F8B,#1891AC);
+    border-radius: 0 15px 15px 0;
+  }
+  
+  .select-box .option,
+  .selected {
+    padding: 12px 24px;
+    cursor: pointer;
+  }
+  
+  .select-box .option:hover {
+    background: linear-gradient(90deg,#184c6e,#117288);
+  }
+  
+  .select-box label {
+    cursor: pointer;
+  }
+  
+  .select-box .option .radio {
+    display: none;
+  }
